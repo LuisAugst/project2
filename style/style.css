@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+:root{
+    --col0: #F2E5E5 ;
+    --col1: #E8C4C4 ;
+    --col2: #CE7777  ;
+    --col3: #2B3A55 ;
+
+    --default-font: Verdana, Geneva, Tahoma, sans-serif;
+    --custom-font1: 'Passion One', cursive;
+    --custom-font2: 'Sriracha', cursive;
+    --custom-font3: 'Hanken Grotesk', cursive;
+}
+
+html, body{
+    background-color: gray;
+    min-width: 300px;
+    font-family: var(--default-font);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header>h1{
+    font-family: var(--default-font);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+    
+}
+
+header>p{
+    padding-bottom: 50px;
+}
+
+header a{
+    color: white;
+    
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--custom-font3);
+    font-size: 3.5vw;
+}
+
+section>p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.image{
+    background-color: rgb(88, 88, 88);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.418);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.image>p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.377);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img1{
+    background-image: url(../images/eversinceB.jpg);
+    
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+section#img2{
+    background-image: url(../images/icedancerB.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;    
+}
